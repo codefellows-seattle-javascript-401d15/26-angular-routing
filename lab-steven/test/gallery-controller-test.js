@@ -3,17 +3,17 @@
 const angular = require('angular');
 require('angular-mocks');
 
-describe('component controllers', function(){
+describe('gallery controller', function(){
   beforeEach(() => {
     angular.mock.module('routesApp');
-    angular.mock.inject(($rootscope, $controller) => {
-      this.$rootscope = $rootscope;
+    angular.mock.inject(($rootScope, $controller) => {
+      this.$rootScope = $rootScope;
       this.galleryCtrl = new $controller('GalleryController');
-      this.galleryCtrl.$onInit();
+      // this.galleryCtrl.$onInit();
 
     });
   });
-  afterEach(() => this.$rootscope.$apply());
+  afterEach(() => this.$rootScope.$apply());
 
   describe('controller initial values', () => {
     it('has proper initial title value', () => {

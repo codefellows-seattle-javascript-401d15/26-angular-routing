@@ -7,6 +7,12 @@ delete webpackConfig.entry;
 module.exports = function(config) {
   config.set({
     webpack: webpackConfig,
+    client: {
+      captureConsole: true,
+    },
+    browserConsoleLogOptions: {
+      level: 'log',
+    },
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
@@ -18,8 +24,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/**/*-test.js',
       'app/entry.js',
+      'test/**/*-test.js',
     ],
 
 
@@ -31,8 +37,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test/**/*-test.js': ['webpack'],//or is it just 'webpack'?
       'app/entry.js': ['webpack'],
+      'test/**/*-test.js': ['webpack'],
     },
 
 

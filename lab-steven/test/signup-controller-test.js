@@ -3,16 +3,16 @@
 const angular = require('angular');
 require('angular-mocks');
 
-describe('component controllers', function(){
+describe('signup controller', function(){
   beforeEach(() => {
     angular.mock.module('routesApp');
-    angular.mock.inject(($rootscope, $controller) => {
-      this.$rootscope = $rootscope;
+    angular.mock.inject(($rootScope, $controller) => {
+      this.$rootScope = $rootScope;
       this.signupCtrl = new $controller('SignupController');
-      this.signupCtrl.$onInit();
+      // this.signupCtrl.$onInit();
     });
   });
-  afterEach(() => this.$rootscope.$apply());
+  afterEach(() => this.$rootScope.$apply());
 
   describe('controller initial values', () => {
     it('has proper initial title value', () => {
