@@ -1,14 +1,14 @@
 'use strict'
 
-// require('css')
+require('./scss/main.scss')
 
 const path = require('path')
 const camelcase = require('camelcase')
 const pascalcase = require('pascalcase')
 const angular = require('angular')
-const uiRouter = require('')
+require('@uirouter/angularjs')
 
-const routesApp = angular.module('routesApp', [uiRouter])
+const routesApp = angular.module('routesApp', ['uiRouter'])
 
 let context = require.context('./config', true, /\.js$/)
 context.keys().forEach(key => routesApp.config(context(key)))
