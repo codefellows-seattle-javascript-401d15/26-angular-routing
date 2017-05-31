@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = ['$log', function($log) {
-  $log.debug('GalleryController');
+  this.$onInit = () => {
+    $log.debug('GalleryController');
 
-  this.title = 'View Your Gallery';
+    this.title = 'View Your Gallery';
+  };
 }];
