@@ -1,8 +1,17 @@
 'use strict';
 
-// TODO: Write a test to ensure that the title property is set for each controller
-/*
-/test/home-controller-test.js
-/test/gallery-controller-test.js
-/test/signup-controller-test.js
-*/
+const angular = require('angular');
+require('angular-mocks');
+
+describe('testing controller', function(){
+  beforeEach(() => {
+    angular.mock.module('routesApp');
+  });
+
+  afterEach(() => this.$rootScope.$apply());
+
+  it('should have a title', () => {
+    expect(this.title).toEqual('Signup');
+  });
+
+});
