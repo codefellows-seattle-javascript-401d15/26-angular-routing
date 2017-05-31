@@ -3,7 +3,7 @@
 ## Description
 
 ## Version
-* 0.1.0
+* 0.1.1
 
 ## Installation
 Please visit the following pages for how to install your project locally.
@@ -29,7 +29,7 @@ npm init
 npm i -S @uirouter/angularjs angular babel-core babel-loader babel-preset-es2015 camelcase clean-webpack-plugin css-loader dotenv extract-text-webpack-plugin file-loader html-loader html-webpack-plugin node-sass pascalcase resolve-url-loader sass-loader style-loader url-loader webpack
 ```
 ```
-npm i -D webpack-dev-server angular-mocks jasmine jasmine-core karma karma-chrome-launcher karma-jasmine karma-webpack webpack-dev-server
+npm i -D webpack-dev-server angular-mocks jasmine jasmine-core karma karma-chrome-launcher karma-jasmine karma-mocha-reporter karma-webpack mocha webpack-dev-server
 ```
 
 Add the following to package.json:
@@ -75,14 +75,19 @@ The result of installation above.
   "karma": "^1.7.0",
   "karma-chrome-launcher": "^2.1.1",
   "karma-jasmine": "^1.1.0",
+  "karma-mocha-reporter": "^2.2.3",
   "karma-webpack": "^2.0.3",
+  "mocha": "^3.4.2",
   "webpack-dev-server": "^2.4.5"
 }
 ```
 
 ## Application
-In Terminal run `webpack`
+In Terminal run `npm run build`
+Result: app/index.html {0} [built]
+
 In Terminal run `npm run build-watch`
+Result: "Project is running at http://localhost:8080/", "webpack: Compiled successfully."
 
 ## Test Setup
 ```
@@ -106,11 +111,39 @@ Should any of the files included by the previous patterns be excluded ?
 Do you want Karma to watch all the files and run the tests on change ?
 > no
 ```
+Adjust the configuration karma.conf.js file to:
+
+```
+config.set({
+  webpack,
+  basePath: '',
+  frameworks: ['jasmine'],
+  files: [
+    'test/**/*-test.js',
+  ],
+  exclude: [
+  ],
+  preprocessors: {
+    'test/**/*-test.js': ['webpack'],
+  },
+  reporters: ['mocha'],
+  port: 9876,
+  colors: true,
+  logLevel: config.LOG_INFO,
+  autoWatch: true,
+  browsers: ['Chrome'],
+  singleRun: false,
+  concurrency: Infinity,
+```
 
 ## Running Tests
 In [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (Terminal) enter the command:
 
-karma start
+In Terminal enter `npm run test`
+Result: "karma start --single-run", "Connected on socket", "✔ 0 tests completed"
+
+In Terminal enter `npm run build-watch`
+Result: "Project is running at http://localhost:8080/", "webpack: Compiled successfully."
 
 ## Resources
 * [Testing Controllers](http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/)
