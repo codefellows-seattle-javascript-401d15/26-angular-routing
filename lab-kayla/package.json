@@ -10,7 +10,7 @@
     "test": "karma start --single-run",
     "test-watch": "karma",
     "build": "webpack",
-    "watch": "webpack-dev-server --inline --hot"
+    "build-watch": "webpack-dev-server --inline --hot"
   },
   "keywords": [],
   "author": "",
