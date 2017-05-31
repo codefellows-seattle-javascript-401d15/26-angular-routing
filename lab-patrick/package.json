@@ -1,21 +1,16 @@
 {
   "name": "lab-patrick",
   "version": "1.0.0",
-  "description": "",
-  "main": "karma.conf.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Lab-26",
+  "main": "index.js",
   "scripts": {
+    "watch": "webpack-dev-server --inline --hot",
     "build": "webpack",
-    "test": "karma start --single-run",
-    "test-watch": "karma start",
-    "build": "webpack",
-    "watch": "webpack-dev-server --inline --hot"
+    "test": "karma start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Patrick Sheridan",
+  "license": "MIT",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.4",
@@ -39,6 +34,13 @@
     "webpack": "^2.6.1"
   },
   "devDependencies": {
+    "angular-mocks": "^1.6.4",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.3",
     "webpack-dev-server": "^2.4.5"
   }
 }
