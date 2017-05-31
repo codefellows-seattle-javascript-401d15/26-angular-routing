@@ -44,32 +44,36 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: 'babel-loader'
       },
       {
         test: /\.html$/,
         use: 'html-loader'
       },
       {
-        test: /\.(eot|ttf|woff\svg).*/,
+        test: /\.(eot|ttf|woff|svg).*/,
         use: 'url?limit=10000&name=image/[hash].[ext]'
       },
       {
         test: /\.scss$/,
-        use: [
+        use: ExtractTextPlugin.extract(
           {
-            loader: 'css-loader',
-            options: { sourceMap: true },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              includePaths: [`${__dirname}/app/scss/`],
-            },
-          },
-        ],
-      },
-    ],
+            use: [
+              {
+                loader: 'css-loader',
+                options: { sourceMap: true }
+              },
+              {
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: true,
+                  includePaths: [`${__dirname}/app/scss/`]
+                }
+              }
+            ]
+          }
+        )
+      }
+    ]
   }
 }

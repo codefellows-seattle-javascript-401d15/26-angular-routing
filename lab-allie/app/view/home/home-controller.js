@@ -1,6 +1,7 @@
 'use strict';
 
-//require scss
+require('./_home.scss');
+
 module.exports = ['$log', function($log) {
   this.$onInit = () => {
     $log.debug('HomeController');
