@@ -1,6 +1,5 @@
 # Created by https://www.gitignore.io/api/osx,linux,node,vim
 
-
 /build
 node_modules
 
