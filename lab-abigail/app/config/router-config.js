@@ -24,8 +24,8 @@ module.exports = [
         name: 'gallery',
         url: '/gallery',
         template: require('../view/gallery/gallery.html'),
-        controller: 'SignupController',
-        controllerAs: 'signupCtrl'
+        controller: 'GalleryController',
+        controllerAs: 'galleryCtrl'
       }
     ]
 

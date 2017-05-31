@@ -1,5 +1,9 @@
 'use strict';
 
 module.exports = ['$log', function($log) {
-  $log.debug('HomeController');
+  this.$onInit = () => {
+    $log.debug('HomeController');
+
+    this.title = 'Home Page';
+  };
 }]
