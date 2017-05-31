@@ -146,6 +146,7 @@ In Terminal enter `npm run build-watch`
 Result: "Project is running at http://localhost:8080/", "webpack: Compiled successfully."
 
 ## Resources
+* [Karma Mocha Reporter](https://www.npmjs.com/package/karma-mocha-reporter)
 * [Testing Controllers](http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/)
 * [End to End Testing](https://docs.angularjs.org/guide/e2e-testing)
 * [Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)

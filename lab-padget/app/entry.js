@@ -1,8 +1,6 @@
 'use strict';
 
-// TODO: use require.context to add all of your angular construct definitions.
-
-// require('./scss/main.scss')
+require('./scss/main.scss');
 
 const path = require('path');
 //const camelcase = require('camelcase');
