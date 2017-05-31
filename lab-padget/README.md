@@ -82,7 +82,7 @@ The result of installation above.
 
 ## Application
 In Terminal run `webpack`
-In Terminal run `npm run build watch`
+In Terminal run `npm run build-watch`
 
 ## Test Setup
 ```
