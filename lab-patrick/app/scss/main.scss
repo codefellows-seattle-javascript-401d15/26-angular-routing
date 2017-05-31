@@ -9,7 +9,7 @@ $white: #fff;
 
 @mixin board{
   border: 2px dashed white;
-  
+
 }
 
 @mixin fonter{
@@ -29,6 +29,7 @@ body {
 }
 
 a{
+  margin: 10px;
   @include buttoner;
 }
 
