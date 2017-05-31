@@ -1,7 +1,7 @@
 'use strict';
 
 require('@uirouter/angularjs');
-// require('./scss/main.scss');
+require('./scss/main.scss');
 const path = require('path');
 // const camelcase = require('camelcase');
 const pascalcase = require('pascalcase');
