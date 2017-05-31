@@ -8,9 +8,7 @@ describe('testing GalleryController', function(){
     angular.mock.module('routesApp');
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope;
-      console.log('this is the $rootScope', this.$rootScope);
       this.galleryCtrl = new $controller('GalleryController');
-      console.log('this is the galleryCtrl', this.galleryCtrl);
       this.galleryCtrl.$onInit();
     });
   });
