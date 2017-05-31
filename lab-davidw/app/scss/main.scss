@@ -35,11 +35,17 @@ body {
   @include margin
   font-family: 'Indie Flower', cursive;
   font-size: $font-size-primary;
-  background: linear-gradient(to bottom, $brand-secondary, $brand-primary);
+  background: linear-gradient($brand-secondary, $brand-primary);
+}
+
+h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: $gutter-std;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 2vw;
   text-align: center;
   margin-bottom: $gutter-std;
 }

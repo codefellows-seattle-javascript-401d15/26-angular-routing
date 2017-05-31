@@ -8,7 +8,7 @@ const pascalcase = require('pascalcase');
 const angular = require('angular');
 require('@uirouter/angularjs');
 
-const cfGramApp = angular.module('routesApp', ['ui.router']);
+const cfGramApp = angular.module('cfGramApp', ['ui.router']);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(key => cfGramApp.config(context(key)));
