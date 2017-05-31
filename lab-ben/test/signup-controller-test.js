@@ -1,6 +1,6 @@
 'use strict';
 
-require('./lib/test-setup')
+require('./lib/test-setup');
 
 const angular = require('angular');
 // require('angular-mocks');
