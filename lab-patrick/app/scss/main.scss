@@ -23,7 +23,7 @@ $white: #fff;
 
 body {
   font-family: helvetica;
-  font-size: 2vw;
+  font-size: 2em;
   background: #87CEEB;
   padding-left: .5em;
 }
@@ -31,6 +31,13 @@ body {
 a{
   margin: 10px;
   @include buttoner;
+}
+form{
+  @include fonter;
+  @include buttoner;
+}
+input{
+  font-size: .5em;
 }
 
 h1{
@@ -46,7 +53,7 @@ h2{
 }
 
 section{
-  width: 50%
+  width: 40%
 }
 
 
