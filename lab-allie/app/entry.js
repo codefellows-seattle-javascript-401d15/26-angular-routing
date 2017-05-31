@@ -8,7 +8,7 @@ const pascalcase = require('pascalcase');
 const angular = require('angular');
 const uiRouter = require('@uirouter/angularjs');
 
-const routesApp = angular.module('routesApp', [uiRouter]);
+const routesApp = angular.module('routesApp', ['ui.router'])
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(key => routesApp.config(context(key)));
