@@ -1,3 +1,4 @@
-webpack.config.js
-karma.config.js
 node_modules
+build/
+webpack.config.js
+karmaconfig.js
