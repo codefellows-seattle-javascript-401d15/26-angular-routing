@@ -6,7 +6,7 @@ const path = require('path');
 const camelcase = require('camelcase');
 const pascalcase = require('pascalcase');
 const angular = require('angular');
-const uiRouter = require();
+const uiRouter = require('@uirouter/angularjs');
 
 const routesApp = angular.module('routesApp', [uiRouter]);
 
