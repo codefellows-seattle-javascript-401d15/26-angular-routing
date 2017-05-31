@@ -81,12 +81,9 @@ karma start
 * [Testing Controllers](http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/)
 * [End to End Testing](https://docs.angularjs.org/guide/e2e-testing)
 * [Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)
-* [Big O Notation](https://simple.wikipedia.org/wiki/Big_O_notation)
-* [Big O Complexity](http://bigocheatsheet.com)
-* [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mmpadget/) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mmpadget/26-angular-routing/blob/lab-26/lab-padget/LICENSE) file for details.
 
 ## Acknowledgments
 * Code Fellows
