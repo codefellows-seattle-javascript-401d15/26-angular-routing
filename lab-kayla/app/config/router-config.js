@@ -17,8 +17,15 @@ module.exports = [
         name: 'signup',
         url: '/signup',
         template: require('../view/signup/signup.html'),
-        controller: 'SignupContriller',
+        controller: 'SignupController',
         controllerAs: 'signupCtrl'
+      },
+      {
+        name: 'gallery',
+        url: '/gallery',
+        template: require('../view/gallery/gallery.html'),
+        controller: 'GalleryController',
+        controllerAs: 'galleryCtrl',
       }
     ]
     routes.forEach(route => $stateProvider.state(route))
