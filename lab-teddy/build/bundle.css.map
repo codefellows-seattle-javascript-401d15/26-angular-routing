@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/scss/app/scss/main.scss"],"names":[],"mappings":"AAAA;EACG,uBAAsB,EACxB","file":"bundle.css","sourcesContent":["html {\n   background-color: #fff;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./app/scss/app/scss/main.scss"],"sourceRoot":""}
