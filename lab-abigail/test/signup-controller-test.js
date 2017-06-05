@@ -1,8 +1,5 @@
 'use strict';
 
-require('angular');
-require('angular-mocks');
-
 describe('testing signupController', function(){
   beforeEach(() => {
     angular.mock.module('routesApp');
