@@ -1,0 +1,13 @@
+// ### BASE ###
+@import './base/reset';
+@import './base/base';
+
+// ### LAYOUT ###
+@import './layout/header';
+@import './layout/footer';
+@import './layout/content';
+
+// ### COMPONENTS ###
+@import '../view/gallery/gallery';
+@import '../view/home/home';
+@import '../view/signup/signup';

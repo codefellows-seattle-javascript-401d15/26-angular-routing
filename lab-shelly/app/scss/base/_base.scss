@@ -1,0 +1,28 @@
+@import '../theme/theme';
+
+html, body {
+  width: 100%;
+  font-family: $font-std;
+  color: $black;
+  background: $white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: $gutter-sm;
+  padding: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: $gutter-sm;
+}
+
+a {
+  color: $black;
+  padding: $gutter-sm;
+
+  &:hover {
+  color: $brand-secondary;
+  }
+}
