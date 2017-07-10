@@ -9,7 +9,7 @@ describe('testing gallery controller', function() {
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope
       this.galleryCtrl = new $controller('GalleryController')
-      this.galleryCtrl.$onInit()
+      // this.galleryCtrl.$onInit()
     })
   })
   afterEach(() => this.$rootScope.$apply())

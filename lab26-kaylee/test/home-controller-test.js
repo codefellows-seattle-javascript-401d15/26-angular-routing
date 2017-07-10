@@ -9,7 +9,7 @@ describe('testing home controller', function() {
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope
       this.homeCtrl = new $controller('HomeController')
-      this.homeCtrl.$onInit()
+      // this.homeCtrl.$onInit()
     })
   })
   afterEach(() => this.$rootScope.$apply())

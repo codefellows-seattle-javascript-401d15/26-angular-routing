@@ -9,7 +9,7 @@ describe('testing signup controller', function() {
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope
       this.signupCtrl = new $controller('SignupController')
-      this.signupCtrl.$onInit()
+      // this.signupCtrl.$onInit()
     })
   })
   afterEach(() => this.$rootScope.$apply())
