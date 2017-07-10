@@ -18,7 +18,7 @@
     "indent": ["error", 2],
     "quotes": ["warn", "single", {"allowTemplateLiterals": true}],
     "no-multi-spaces": ["warn", {"exceptions": { "VariableDeclarator": true }}],
-    "no-parking-spaces": "warn",
+    # "no-parking-spaces": "warn",
     "new-cap": "warn",
     "no-redeclare": ["error", { "builtinGlobals": true }]
   }
