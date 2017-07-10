@@ -1,6 +1,6 @@
 'use strict'
 
-const angular = require('angular')
+require('angular')
 require('angular-mocks')
 
 describe('testing gallery controller', function() {
@@ -9,12 +9,12 @@ describe('testing gallery controller', function() {
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope
       this.galleryCtrl = new $controller('GalleryController')
-      // this.galleryCtrl.$onInit()
+      this.galleryCtrl.$onInit()
     })
   })
   afterEach(() => this.$rootScope.$apply())
 
-  it('should have a title property', () => {
+  fit('should have a title property', () => {
     expect(this.galleryCtrl.title).toEqual('Welcome to your Gallery!')
   })
 })
