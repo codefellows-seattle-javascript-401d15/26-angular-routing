@@ -3,5 +3,9 @@
 // require('./_signup.scss')
 
 module.exports = ['$log', function($log) {
-  $log.debug('#SignupController')
+
+  this.$onInit = () => {
+    $log.debug('#SignupController')
+    this.title = 'Sign up for the app here!'
+  }
 }]
